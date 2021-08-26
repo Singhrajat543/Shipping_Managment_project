@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Shiping_ProjectModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Shiping_ProjectEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="CostomerProducts" EntityType="Shiping_ProjectModel.CostomerProduct" />
+    <EntitySet Name="Registrations" EntityType="Shiping_ProjectModel.Registration" />
+    <EntitySet Name="ServiceTables" EntityType="Shiping_ProjectModel.ServiceTable" />
+  </EntityContainer>
+  <EntityType Name="CostomerProduct">
+    <Key>
+      <PropertyRef Name="CP_id" />
+    </Key>
+    <Property Name="CP_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Customer_ID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PRODUCT_NAME" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Cargo_Cantainer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="images" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="PRODUCT_DETAILS" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Company" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Weights" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PikUp_Date" Type="DateTime" Precision="0" />
+    <Property Name="Freight_Charges" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Registration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Company_name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PIN_Code" Type="Int32" />
+    <Property Name="Passwords" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ServiceTable">
+    <Key>
+      <PropertyRef Name="Sv_Id" />
+    </Key>
+    <Property Name="Sv_Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Pickup_City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Drop_City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Container_Type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="CUstomer_ID" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

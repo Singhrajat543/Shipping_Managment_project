@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Shiping_ProjectModelStoreContainer" CdmEntityContainer="Shiping_ProjectEntities">
+    <EntitySetMapping Name="CostomerProducts">
+      <EntityTypeMapping TypeName="Shiping_ProjectModel.CostomerProduct">
+        <MappingFragment StoreEntitySet="CostomerProduct">
+          <ScalarProperty Name="CP_id" ColumnName="CP_id" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
+          <ScalarProperty Name="Cargo_Cantainer" ColumnName="Cargo_Cantainer" />
+          <ScalarProperty Name="images" ColumnName="images" />
+          <ScalarProperty Name="PRODUCT_DETAILS" ColumnName="PRODUCT_DETAILS" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Weights" ColumnName="Weights" />
+          <ScalarProperty Name="PikUp_Date" ColumnName="PikUp_Date" />
+          <ScalarProperty Name="Freight_Charges" ColumnName="Freight_Charges" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registrations">
+      <EntityTypeMapping TypeName="Shiping_ProjectModel.Registration">
+        <MappingFragment StoreEntitySet="Registration">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Company_name" ColumnName="Company_name" />
+          <ScalarProperty Name="PIN_Code" ColumnName="PIN_Code" />
+          <ScalarProperty Name="Passwords" ColumnName="Passwords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceTables">
+      <EntityTypeMapping TypeName="Shiping_ProjectModel.ServiceTable">
+        <MappingFragment StoreEntitySet="ServiceTable">
+          <ScalarProperty Name="Sv_Id" ColumnName="Sv_Id" />
+          <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+          <ScalarProperty Name="Pickup_City" ColumnName="Pickup_City" />
+          <ScalarProperty Name="Drop_City" ColumnName="Drop_City" />
+          <ScalarProperty Name="Container_Type" ColumnName="Container_Type" />
+          <ScalarProperty Name="CUstomer_ID" ColumnName="CUstomer_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
